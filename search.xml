@@ -53,7 +53,7 @@
 <p>在本地新建一个文件夹用于存储全部文件，在该目录下启动<code>git bash    </code></p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /f/Workspaces/hexo/</span><br><span class="line">$ hexo init  <span class="comment"># 初始化目录</span></span><br><span class="line">$ hexo g 	 <span class="comment"># 生成</span></span><br><span class="line">$ hexo s 	 <span class="comment"># 启动服务</span></span><br></pre></td></tr></table></figure>
 <p>至此，博客就通过github搭建起来了。你可以通过本地端口<a href="http://localhost:4000](http://localhost:4000/)进行查看。hexo已经预置了一篇`Hello">http://localhost:4000](http://localhost:4000/)进行查看。hexo已经预置了一篇`Hello</a> World`示例文档。</p>
-<h3 id="3-写些博客"><a href="#3-写些博客" class="headerlink" title="3.写些博客"></a>3.写些博客</h3><h3 id="3-1-生成博文"><a href="#3-1-生成博文" class="headerlink" title="3.1 生成博文"></a>3.1 生成博文</h3><p>在根目录下执行：</p>
+<h2 id="3-写些博客"><a href="#3-写些博客" class="headerlink" title="3.写些博客"></a>3.写些博客</h2><h3 id="3-1-生成博文"><a href="#3-1-生成博文" class="headerlink" title="3.1 生成博文"></a>3.1 生成博文</h3><p>在根目录下执行：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&#x27;my-first-blog&#x27;</span></span><br></pre></td></tr></table></figure>
 <p>hexo会帮我们在<code>_posts</code>下生成相关md文件,你可以在/source/_posts目录下看到新生成的markdown文档。</p>
 <p>在文档内，你可以配置其属性</p>
