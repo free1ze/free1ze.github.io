@@ -88,12 +88,8 @@
 <a id="more"></a>
 
 <p>在学习过程中，经常需要尝试某些软件，但又经常碰到安完了难以卸载/环境配置不兼容/想胡求搞完一删的情况。这时候就需要虚拟环境venv。</p>
-<h2 id="1、基本使用"><a href="#1、基本使用" class="headerlink" title="1、基本使用"></a>1、基本使用</h2><p>  通过<code>pip</code>安装virtualenv：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">pip <span class="token function">install</span> virtualenv<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p> 测试安装:</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">virtualenv --version<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>在当前目录创建虚拟环境</p>
-<pre class="line-numbers language-python3" data-language="python3"><code class="language-python3">python3 -m venv my_env<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="1、基本使用"><a href="#1、基本使用" class="headerlink" title="1、基本使用"></a>1、基本使用</h2><p>在当前目录创建虚拟环境</p>
+<pre class="line-numbers language-python3" data-language="python3"><code class="language-python3">python -m venv my_env<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>激活虚拟环境</p>
 <pre class="line-numbers language-python3" data-language="python3"><code class="language-python3">cd my_env
 scripts\activate #注意斜线方向！<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
@@ -103,6 +99,7 @@ scripts\activate #注意斜线方向！<span aria-hidden="true" class="line-numb
 <pre class="line-numbers language-python3" data-language="python3"><code class="language-python3">$ rm -rf venv my_env<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h2 id="2-原理解释"><a href="#2-原理解释" class="headerlink" title="2.原理解释"></a>2.原理解释</h2><p>virtualenv是如何创建“独立”的Python运行环境的呢？</p>
 <p>原理很简单，就是把系统Python复制一份到virtualenv的环境，用命令<code>source venv/bin/activate</code>进入一个virtualenv环境时，virtualenv会修改相关环境变量，让命令<code>python</code>和<code>pip</code>均指向当前的virtualenv环境。</p>
+<p>virtualenv和venv使用细节略有不同，但功能大致相同。</p>
 ]]></content>
   </entry>
 </search>
